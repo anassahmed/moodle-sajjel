@@ -18,6 +18,10 @@
  * @link      https://www.github.com/anassahmed/sajjel
  */
 
+if ($_SERVER['SCRIPT_FILENAME'] == __FILE__) {
+    die('You can\'t open this page directly!');
+}
+
 require_once dirname(__FILE__) . '/../config.php';
 global $mysqli_obj;
 global $table_name;
